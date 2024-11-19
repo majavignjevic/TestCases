@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 1</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="src/style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <img class="container__image" src="src/Image/image.png" alt="Picture"/>
+            <div class="container__text">
+                <h1 class="container__heading">
+                    Handcrafted and responsibily sourced
+                </h1>
+                <p class="container__paragraph">
+                    On the other hand, we denounce with righteous indignation and dislike
+                    men who are so beguiled and demoralised by the charms of pleasure of
+                    the moment, so blinded by desire, that they cannot forsee the pain and
+                    trouble that are bound to ensue; and equal blame belongs to those who
+                    fail in their duty through weakness of will, which is the same as
+                    saying through shrinking from toil and pain.
+                </p>
+                <button class="container__button container__button--primary" id="container__button">
+                    Learn more
+                </button>
+                <p class="container__paragraph container__paragraph--hidden" id="container__paragraph--hidden">
+                    On the other hand, we denounce with righteous indignation and dislike
+                    men who are so beguiled and demoralised by the charms of pleasure of
+                    the moment, so blinded by desire, that they cannot forsee the pain and
+                    trouble that are bound to ensue; and equal blame belongs to those who
+                    fail in their duty through weakness of will, which is the same as
+                    saying through shrinking from toil and pain.
+                </p>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        document.getElementById('container__button').addEventListener("click", () =>{
+            var paragraph = document.getElementById('container__paragraph--hidden');
+            var button = document.getElementById('container__button');
+            if (paragraph.style.display === "none"){
+                button.style.display = "none";
+                paragraph.style.display = "block";
+            } else{
+                button.style.display = "block";
+                paragraph.style.display = "none";
+            }
+        })
+
+    </script>
+</html>
